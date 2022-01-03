@@ -240,6 +240,7 @@ BEGIN_MESSAGE_MAP(CShutdownTimerDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON13, &CShutdownTimerDlg::OnBnClickedButton13)
 	ON_BN_CLICKED(IDC_BUTTON14, &CShutdownTimerDlg::OnBnClickedButton14)
 	ON_WM_CLOSE()
+	ON_BN_CLICKED(IDC_BUTTON15, &CShutdownTimerDlg::OnBnClickedButton15)
 END_MESSAGE_MAP()
 
 // CShutdownTimerDlg 消息处理程序
@@ -351,7 +352,7 @@ debug = true;
 
 
 
-	SetTimer(0, 20000, NULL);
+	SetTimer(0, 1000, NULL);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -1544,4 +1545,12 @@ void CShutdownTimerDlg::OnClose()
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	ShowWindow(SW_HIDE);//隐藏主窗口
 	//CDialogEx::OnClose();
+}
+
+
+void CShutdownTimerDlg::OnBnClickedButton15()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CountDown dlg;
+	dlg.DoModal();
 }

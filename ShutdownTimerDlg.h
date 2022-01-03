@@ -96,6 +96,7 @@ public:
 	afx_msg void OnBnClickedButton13();
 	afx_msg void OnBnClickedButton14();
 	afx_msg void OnClose();
+	afx_msg void OnBnClickedButton15();
 };
 char* G2U(const char* gb2312);
 char* U2G(const char* utf8);
