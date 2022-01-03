@@ -142,7 +142,7 @@ void CountDown::OnBnClickedButton2()
 	{
 		//MessageBox(_T("1"));
 		times[time_order].time_revise = -1;
-
+		OnInitDialog();
 	}
 	printf("times[time_order].time_revise=%d\n", times[time_order].time_revise);
 }
@@ -157,7 +157,7 @@ void CountDown::OnBnClickedButton1()
 	{
 		//MessageBox(_T("1"));
 		times[time_order].time_revise += 600;
-
+		OnInitDialog();
 	}
 	printf("times[time_order].time_revise=%d\n", times[time_order].time_revise);
 }
