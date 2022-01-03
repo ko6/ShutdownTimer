@@ -2,3 +2,4 @@
 Debug/*
 *.xml
 seafile*
+Release/

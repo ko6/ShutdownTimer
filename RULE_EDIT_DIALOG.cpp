@@ -646,5 +646,10 @@ void RULE_EDIT_DIALOG::OnBnClickedButton1()
 void RULE_EDIT_DIALOG::OnBnClickedButton2()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	OnBnClickedRadio2();
+	//OnBnClickedRadio2();
+	//UpdateData(TRUE);
+	is_change = TRUE;
+	//printf("调试信息\n time_order : %d",time_order);
+	times.erase(times.begin()+time_order);
+	CDialog::OnOK();
 }
